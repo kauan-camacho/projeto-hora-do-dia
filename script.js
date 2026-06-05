@@ -6,12 +6,12 @@ function carregar(){
     var data = new Date()
     var hora = data.getHours()
 
-    msg.innerHTML = `Agora são ${hora} horas`
+    msg.innerHTML = `Agora são <strong>${hora} horas</strong>`
     if (hora >= 0 && hora <= 12) {
         //Bom dia 
         img.src = "img/foto-manha.png"
         p1.innerHTML = 'Bom Dia!'
-        document.body.style.background = '#ffdea7'
+        document.body.style.background = '#fcd89b'
     } else if (hora >= 12 && hora <= 18 ) {
         //Boa tarde
         img.src = "img/foto-tarde.png"
